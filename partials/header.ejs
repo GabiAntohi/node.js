@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tides Interiors</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriela Antohi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	
+	<link rel="stylesheet" type="text/css" href="../app.css">
+    <script src="https://use.fontawesome.com/7f06848445.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<script>
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#extendparagraph").toggle(1000);
+  });
+});
+
+</script>
+
+</head>
+<body>
+	<!-- Header -->
+<header class="header1">
+<!-- navigation elements from w3schools -->
+<div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/contact">Contact</a>
+    <div class="social">
+						<a href="#" class="color_pink fa fa-facebook"></a>
+						<a href="#" class="color_pink fa fa-instagram"></a>
+						<a href="#" class="color_pink fa fa-pinterest-p"></a>
+					</div>
+   </div>
+</div>
+<!-- Use any element to open/show the overlay navigation menu -->
+<span id = "hamburger" onclick="openNav()">&#9776;</span>
+	</header>

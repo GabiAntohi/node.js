@@ -1,0 +1,28 @@
+ <%include ../partials/header%> 
+   <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_contact">
+    <div class = "onbanner">
+    <p><strong>Detailed product here</strong></p>
+	</div>
+	</section>
+    <section class="section_product section_index">
+	<div class= "container">
+<div class="row">
+  <h1><br>
+  <div class="grid-container">
+      <%res1.forEach(function(product){%>
+                <ul class="item">
+                    
+                    <li class="itemp title"><%= product.Name%> </li>
+                    <li class="itemp price"> <%= product.Price%> &euro; </li>
+                    <img src = "/<%=product.Image%>" class ="pimage"></image>
+                    <li class="itemp description"><%= product.Description%> </li>
+                     <a href = "/" class = "button link2">Back</a> 
+                    </ul>
+              <% }); %>
+    </div>
+  </h1>
+</div>	 
+	</div>
+	</section>
+	<%include ../partials/footer%>

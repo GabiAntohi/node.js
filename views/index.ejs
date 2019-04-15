@@ -1,0 +1,42 @@
+<%include ../partials/header%>
+    <section class="banner_home">
+	<div class= "contact_header"> 
+    <p class = "moto">Inspired Interiors</p>	
+    </div>
+	</section>
+    <section class="section_index">
+	<div class= "container">
+		<div class = "packages">
+		<h2>Our Packages</h2>
+		<hr>
+		<p>Our service packages are designed to make things easy for you.
+Feel free to get in touch with us should you have any questions.
+</div>
+</p>
+<div class="row">
+  <h1><br>
+  <div class="grid-container">
+      <%res1.forEach(function(product){%>
+                <ul class="item">
+                	
+                    <li class="itemp title"><%= product.Name%></li>
+                    <li class="itemp price"><%= product.Price%> &euro;</li>
+                    <img src = "/<%=product.Image%>" class ="pimage"></image>
+                    <a href = "/deleteproduct/<%= product.Id %>" class = "button link2">Delete</a>       
+                    <a href = "/editproducts/<%= product.Id %>" class = "button link2">Edit</a>   
+                     <a href = "/showproduct/<%= product.Id %>" class = "button link2 details">Details</a> 
+                    </ul>
+              <% }); %>
+    </div>
+  </h1>
+</div>	 
+	</div>
+	</section>
+<!--button to create a product-->
+<section class="section_index">
+	<div class= "container">
+		<a href="/createproducts" class = "button center link">Create new product here</a>
+	</div>
+	</section>
+	
+<%include ../partials/footer%>

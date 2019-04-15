@@ -1,0 +1,30 @@
+  <%include ../partials/header%> 
+   <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_contact">
+    <div class = "onbanner">
+    <p><strong>CALL:</strong> 0873528937</p>
+    <p><strong>EMAIL:</strong> tides.eu@gmail.com</p>
+	<h4>Alternatively you can use the contact form below, thank you!</h4>
+	</div>
+	</section>
+	<section class="section_contact">
+		<div class="container">
+			<form accept-charset = "UTF-8" id="contactform" name="myForm" action="/contact" onsubmit="return validateForm()" method="post">
+			<label class="required" for="name">First name</label>
+			<input id="name" name="name" required type="text"  placeholder="your first name"/>
+			<label class="required" for="surname">Surname</label>
+			<input id="surname" name="surname" required type="text"  placeholder="your surname"/>
+			<label class="required" for="email">Email</label>
+			<input id="email" required name="email" type="email"  placeholder="your email address"/>	
+			<label class="required" for="message">Message</label>
+			<textarea id="comment" required name="comment" placeholder="your message here"></textarea>
+			<button class="button" type="submit" form="contactform">Submit</button>
+            </form>
+		</div>
+	</section>
+	<section class="section_contact">
+	<div class= "container">
+	<a href = "/contacts" class = "button center link">See all people who have contacted the company</a>
+	</div>
+	</section>	
+	<%include ../partials/footer%>

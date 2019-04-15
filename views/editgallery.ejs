@@ -1,0 +1,23 @@
+ <%include ../partials/header%> 
+   <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_contact">
+    <div class = "onbanner">
+    <p><strong>Edit the gallery items here</strong></p>
+	</div>
+	</section>
+    <section class="section_contact">
+		<div class="container">
+		    <%res1.forEach(function(galleryItem){%>
+			<form accept-charset = "UTF-8" id="contactform" name="myForm" action="/editgallery/<%=galleryItem.Id%>" onsubmit="return validateForm()" method="post">
+			<label class="required" for="name">Name</label>
+			<input id="name" name="name" required type="text" value="<%=galleryItem.Name%>"/>
+			<label class="required" for="price">Price</label>
+			<input  required name="image" type="text"  value="<%=galleryItem.Image%>"/>	
+			<label class="required" for="description">Description</label>
+			<textarea id="comment" required name="description" ><%=galleryItem.Description%></textarea>
+			<button class="button" type="submit" >Save Changes</button>
+            </form>
+            <%});%>
+		</div>
+	</section>
+	<%include ../partials/footer%>

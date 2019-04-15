@@ -1,0 +1,32 @@
+<%include ../partials/header%>
+<script>
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#extendparagraph").show(1000);
+    $('#show').css('display','none');
+  });
+});
+</script>
+
+ <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_about">
+     <div class = "onbanner">
+    <p><strong>Inspired interiors</strong></p>
+    <p><strong>Excellent customer service</strong></p>
+	<h4>All our clients are winners!</h4>
+	</div>	
+	</section>
+	<section>
+	    <div class = "container clearfix">
+	    <div class ="right">
+	    <p>We understand that design is more than just aesthetics. It is a multi-faceted, organic process that influences every element of a project. It is about creating experiences, destinations, sensations; adding value to each interaction. </p>  
+	    <p>By considering all the aspects that define a space: history, setting, purpose and people, we synthesize and transform that inspiration into tangible environments which resonates with our clients.</p>
+	    <p id = "extendparagraph" style = "display:none;">Expressed in the conscientious selection of materials, architecture, custom furniture and lighting, we reflect the desire to create artfully innovative and purposeful human experiences through built environments. </p> 
+	    <button id="show">Learn more</button> 
+	    </div>
+	    <div class= "left">
+	           <img src="/interior2.jpg"/>
+	    </div>
+	    </div>
+	</section>
+<%include ../partials/footer%>

@@ -1,0 +1,23 @@
+ <%include ../partials/header%> 
+   <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_contact">
+    <div class = "onbanner">
+    <p><strong>Create your new product here</strong></p>
+	</div>
+	</section>
+    <section class="section_contact">
+		<div class="container">
+			<form accept-charset = "UTF-8" id="contactform" name="myForm" action="/createproducts" onsubmit="return validateForm()" method="post">
+			<label class="required" for="name">Name</label>
+			<input id="name" name="name" required type="text"  placeholder="Please enter product name"/>
+			<label class="required" for="price">Price</label>
+			<input id="surname" name="price" required type="text"  placeholder="Please enter product price"/>
+			<label class="required" for="image">Image</label>
+			<input  required name="image" type="text"  placeholder="Please enter product image"/>	
+			<label class="required" for="description">Description</label>
+			<textarea id="comment" required name="description" placeholder="Please enter product description"></textarea>
+			<button class="button" type="submit" form="contactform">Create product</button>
+            </form>
+		</div>
+	</section>
+	<%include ../partials/footer%>

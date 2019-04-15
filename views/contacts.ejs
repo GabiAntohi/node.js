@@ -1,0 +1,32 @@
+  <%include ../partials/header%> 
+   <h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_contact">
+    <div class = "onbanner">
+    <p><strong>People who have contacted the company</strong></p>
+	</div>
+	</section>
+    <section class="section_contact">
+	<div class= "container">
+<div class="row">
+  <h1><br>
+  <div class="grid-container">
+      <%contact2.forEach(function(contact2){%>
+               
+                <ul class="item">
+                   <li class="itemtitle color_pink">Id: <%= contact2.id%></li>
+                   <li class="itemp">Surname: <%= contact2.surname%> </li>
+                   <li class="itemp">Name: <%= contact2.name%> </li>
+                    <li class="itemp">Email: <%= contact2.email%> </li>
+                    <li class="itemp">Comment: <%= contact2.comment%> </li>
+                    <a href = "/deletecontact/<%= contact2.id %>" class = "button link2">Delete</a>       
+                    <a href = "/editcontact/<%= contact2.id %>" class = "button link2">Edit</a>    
+                    </ul>
+              
+              
+              <% }); %>
+    </div>
+  </h1>
+</div>	 
+	</div>
+	</section>	
+	<%include ../partials/footer%>

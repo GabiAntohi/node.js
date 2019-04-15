@@ -1,0 +1,57 @@
+<%include ../partials/header%>
+<h1 class = "logo"><img src="/logo2.png"/></h1>
+    <section class="banner_gallery">
+    <div class = "onbanner">
+    <p><strong>If you loved our work show us what worked best</strong></p>
+	<h4>The best photo will receive a TIDES special gift.</h4>
+	</div>
+	</section>
+	<section>
+		<div class ="gallery">
+			<h5>And this month's winner is... </h5>
+		<p class = "image clearfix"><p id ="nameOfWinner">Anna Smith</p></p>
+	    
+		</div>
+		</section>
+		<section class = "section_gallery">
+			<div class = "container">
+		<div class="row">
+  <h1><br>
+  <div class="grid-container">
+      <%res1.forEach(function(galleryItem){%>
+                <ul class="item">
+                	<img src = "/<%=galleryItem.Image%>" class ="pimage"></image>
+                    <li class="itemp title"><%= galleryItem.Name%></li>
+                    <li class="itemp description"><%= galleryItem.Description%> </li>
+                    <a href = "/deletegallery/<%= galleryItem.Id %>" class = "button link2">Delete</a>       
+                    <a href = "/editgallery/<%= galleryItem.Id %>" class = "button link2">Edit</a> 
+                    </ul>
+              <% }); %>
+    </div>
+  </h1>
+</div>	 	
+</div>
+		</section>
+<section class="section_gallery">
+	<div class= "container">
+		<div class = "packages">
+		<h2>Tell us your story</h2>
+		<hr>
+		<p>Fill out the form below and win a special TIDES gift.
+</div>
+</section>
+		<section class="section_contact">
+		<div class="container">
+			<form accept-charset = "UTF-8" id="contactform" name="myForm" action="/gallery" onsubmit="return validateForm()" method="post">
+			<label class="required" for="name">Name</label>
+			<input id="name" name="name" required type="text"  placeholder="Please enter your name"/>
+			<label class="required" for="image">Image</label>
+			<input  required name="image" type="text"  placeholder="Please enter ohoto"/>	
+			<label class="required" for="description">Description</label>
+			<textarea id="comment" required name="description" placeholder="Please enter description"></textarea>
+			<button class="button" type="submit" form="contactform">Upload</button>
+            </form>
+		</div>
+	</section>
+	<script type="text/javascript" src="../counter.js"></script>
+<%include ../partials/footer%>
