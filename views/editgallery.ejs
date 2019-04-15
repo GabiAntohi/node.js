@@ -11,7 +11,7 @@
 			<form accept-charset = "UTF-8" id="contactform" name="myForm" action="/editgallery/<%=galleryItem.Id%>" onsubmit="return validateForm()" method="post">
 			<label class="required" for="name">Name</label>
 			<input id="name" name="name" required type="text" value="<%=galleryItem.Name%>"/>
-			<label class="required" for="price">Price</label>
+			<label class="required" for="price">Image</label>
 			<input  required name="image" type="text"  value="<%=galleryItem.Image%>"/>	
 			<label class="required" for="description">Description</label>
 			<textarea id="comment" required name="description" ><%=galleryItem.Description%></textarea>

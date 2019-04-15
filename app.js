@@ -16,10 +16,7 @@ app.use(express.static("js"));
 //create connectivity to mysql database - this should be in a server connection file
 //substitute these details for your own gearhost database details
 const db = mysql.createConnection ({
-    host:'den1.mysql5.gear.host',
-    user:'tides',
-    password:'Oz93!0?Egc21',
-    database:'tides'
+
 });
 db.connect((err)=>{
     if(err){
@@ -150,7 +147,7 @@ let query = db.query(sql, (err, res1)=>{
     res.render('editgallery', {res1});
 });
 });
-//post request url to edit products
+//post request url to edit galleryitem
 app.post('/editgallery/:id', function(req, res) {
   let sql = 'UPDATE Gallery SET Name = "'+req.body.name+'", Image= "'+req.body.image+'", Description = "'+req.body.description+'"WHERE Id = "'+req.params.id+'"';  
   let query = db.query(sql, (err, res) =>{

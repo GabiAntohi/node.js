@@ -15,6 +15,7 @@ body, html {
     font-weight: 400;
 	font-size: 16px;
     line-height: 26px;   
+    background-color:rgba(242, 242, 242,.2);
 }
 
 h3, h4, h5, h6, .moto{
@@ -50,14 +51,7 @@ h4{
 	margin-top:10px;
     letter-spacing:1px;   
 }
-.moto {
-	font-size: 3em;	
-	line-height:1.1em;
-	max-width:50%;
-    padding-top:100px;
-	padding-left:50px;
-	color:black;
-}
+
 
 a {
 	font-size: 15px;
@@ -91,14 +85,13 @@ ul, li {
 	list-style-type: none;
 }
 
-input {
+input, textarea {
 	outline: none;
+	background-color:rgba(242, 242, 242,.4);
+	border:1px solid #283546;
 }
 
-textarea {
-  outline: none;
 
-}
 
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
@@ -157,33 +150,54 @@ input:focus, textarea:focus{
 .required::after {
 	color: #283546; content: " *";
 }
+.moto {
+	font-size: 3.4em;	
+	line-height:1.1em;
+	max-width:90%;
+    padding-top:588px;
+	padding-left:20px;
+	color:black;
+	color: #fadadd;
+}
+.home_all{width:100%;
+    background-color: #fadadd;
+    min-height:630px;
+    	-webkit-box-shadow: 0 8px 6px -6px #cecece; 
+	   -moz-box-shadow: 0 8px 6px -6px #cecece; 
+	        box-shadow: 0 8px 6px -6px #cecece; 
+    
+}
 .banner_home{
 	background-image: url(/artsmalllogo.jpg);
-	background-color: #283546;
 	background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center;
     background-size: contain;
-	width:100%;
 	max-width:800px;
-	min-height:760px;
 	margin:0 auto;
-	background-size:cover;
+	width:650px;
+	height:650px;
+	padding-bottom:5px;
+
+
+}
+.banner_contact, .banner_about{
+   		-webkit-box-shadow: 0 8px 6px -6px #cecece; 
+	   -moz-box-shadow: 0 8px 6px -6px #cecece; 
+	        box-shadow: 0 8px 6px -6px #cecece;  
 }
 .banner_contact, .banner_about, .banner_gallery{
-	background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: contain;
 	width:100%;
 	max-height:400px;
 	height:50%;
 	margin:0 auto;
-	background-size:cover;
+
 }
 
 
 .banner_about,.banner_contact, .banner_gallery{
     position:relative;
 	background-color: #fadadd;
+
 }
 .banner_contact .onbanner, .banner_gallery .onbanner, .banner_about .onbanner{
     width:100%;
@@ -306,7 +320,7 @@ li.itemp{display:block;}
   text-align: center;
   padding: 5px 0;
   margin-bottom:20px;
-  background-color:rgba(242, 242, 242, .6) ;
+  background-color:rgba(211, 211, 211,.5) ;
 }
 .item img{width:100%}
 
@@ -387,6 +401,7 @@ button:hover, .button:hover{
     cursor: pointer;
 	background-color:#283546;
 	color:#fadadd;
+    transition-timing-function: ease-in;
 }
 
 .link{
@@ -408,22 +423,7 @@ button:hover, .button:hover{
     color:#383838
 }
 
-footer .newsletter{
-    width: 70%;
-    padding:20px 0px 10px 0px;
-} 
-footer form input{
-    padding-top:8px;
-    background-color:#283546;
-    border:none;
-    border-bottom:1px solid #fadadd;
-    color:darkgray;
-    font-size:13px;
-    width:100%;
-}
-footer form {
-    width:100%;
-}
+
 .upload {
     float:right;
     width:45%;
@@ -492,6 +492,9 @@ footer form {
 section .gallery{
     background-color:#283546;
     width:100%;
+       		-webkit-box-shadow: 0 8px 6px -6px #cecece; 
+	   -moz-box-shadow: 0 8px 6px -6px #cecece; 
+	        box-shadow: 0 8px 6px -6px #cecece;  
 }
 section .gallery h5{
     text-align: center;
