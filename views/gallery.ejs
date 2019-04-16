@@ -20,7 +20,7 @@
   <div class="grid-container">
       <%res1.forEach(function(galleryItem){%>
                 <ul class="item">
-                	<img src = "/<%=galleryItem.Image%>" class ="pimage"></image>
+                	<img src = "/<%=galleryItem.Image%>" class ="pimage effect"></image>
                     <li class="itemp title"><%= galleryItem.Name%></li>
                     <li class="itemp description"><%= galleryItem.Description%> </li>
                     <a href = "/deletegallery/<%= galleryItem.Id %>" class = "button link2">Delete</a>       

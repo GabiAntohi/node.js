@@ -155,7 +155,7 @@ input:focus, textarea:focus{
 	line-height:1.1em;
 	max-width:90%;
     padding-top:588px;
-	padding-left:20px;
+	padding-left:10px;
 	color:black;
 	color: #fadadd;
 }
@@ -316,7 +316,7 @@ input:focus, textarea:focus{
 li.itemp{display:block;}
 
 .item {
-  background-color: rgba(255, 255, 255, 0.8);
+
   text-align: center;
   padding: 5px 0;
   margin-bottom:20px;
@@ -533,7 +533,7 @@ section .gallery h5{
 }
 .section_index img{
     width:100%;
-    height: 200px;
+    height: 220px;
     overflow:hidden;   
     margin:0;
     
@@ -546,7 +546,7 @@ section .gallery h5{
     margin:0 auto;
 }
 .section_product img{
-    height:250px;
+    height:400px;
 }
 
 .packages h2{

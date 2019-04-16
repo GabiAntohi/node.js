@@ -16,7 +16,7 @@ app.use(express.static("js"));
 //create connectivity to mysql database - this should be in a server connection file
 //substitute these details for your own gearhost database details
 const db = mysql.createConnection ({
-
+   
 });
 db.connect((err)=>{
     if(err){

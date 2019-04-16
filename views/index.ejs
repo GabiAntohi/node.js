@@ -1,4 +1,15 @@
 <%include ../partials/header%>
+<script>
+$(document).ready(function(){
+  $(".effect").hover(
+  function() {
+    $(this).stop().animate({"opacity": "0.5"}, 260);
+  },
+  function() {
+    $(this).stop().animate({"opacity": "1"}, 260);
+  });
+});
+</script>
 <section class="home_all">
     <div class="banner_home">
 	<div class= "contact_header"> 
@@ -23,7 +34,8 @@ Feel free to get in touch with us should you have any questions.
                 	
                     <li class="itemp title"><%= product.Name%></li>
                     <li class="itemp price"><%= product.Price%> &euro;</li>
-                    <img src = "/<%=product.Image%>" class ="pimage"></image>
+                    <a href = "/showproduct/<%= product.Id %>"><img src = "/<%=product.Image%>" class ="pimage effect">
+                     </image></a>
                     <a href = "/deleteproduct/<%= product.Id %>" class = "button link2">Delete</a>       
                     <a href = "/editproducts/<%= product.Id %>" class = "button link2">Edit</a>   
                      <a href = "/showproduct/<%= product.Id %>" class = "button link2 details">Details</a> 
